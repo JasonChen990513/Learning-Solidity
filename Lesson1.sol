@@ -29,8 +29,8 @@ contract DataTypes {
 }
 
 contract ArithmeticOperators is DataTypes {
-    function multiplyMyNumber(uint numberToMultiply) external view returns(uint){
-       return (myNumber * numberToMultiply);
+    function multiplyMyNumber(uint numberToMultiply, uint numberToMultiply2) external view returns(uint){
+       return (myNumber * numberToMultiply * numberToMultiply2);
     }
 
     function addToMyNumber(uint numberToAdd) external view returns(uint){

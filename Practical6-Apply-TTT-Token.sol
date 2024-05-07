@@ -2,7 +2,8 @@
     pragma solidity 0.8.19;
 
     // import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-    // import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
+    //import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
+
         /**
     * @dev Interface of the ERC20 standard as defined in the EIP.
     */
@@ -1249,8 +1250,11 @@
     }
 
 
+    //-----------------------------------
+    //Above is the import part
+
     contract TickTackToe is ERC1155{
-        constructor() ERC1155("") { //"https://ipfs.io/ipfs/QmRkbqZ2CmMqDLxU7r84VMjk5qmYJJLXLxqWPe5ooFgRPL/{id}.json"
+        constructor() ERC1155("https://pink-bitter-tarsier-946.mypinata.cloud/ipfs/QmRkbqZ2CmMqDLxU7r84VMjk5qmYJJLXLxqWPe5ooFgRPL/{id}.json") { //"https://ipfs.io/ipfs/QmRkbqZ2CmMqDLxU7r84VMjk5qmYJJLXLxqWPe5ooFgRPL/{id}.json"
             owner = msg.sender;
         }
         // constructor(){
@@ -1268,7 +1272,7 @@
         uint256 public treasuryFee = 5;
 
         uint256 public totalAmount;
-
+        uint test;
         address public owner; // contract owner
         bool locked;    // lock for re entry
 

@@ -100,11 +100,11 @@
 	},
 	"sources": {
 		"Practical6-Apply-TTT-Token.sol": {
-			"keccak256": "0xc18ca4284c7a69c77a7b6ce4260f7f580c9bcbb2a8e595459a08a249055b7834",
+			"keccak256": "0x28e97df74697547b58ecea540b83673eeb5461dc6c1109fa55f6b19cd79e05e8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a7e19dbfaf191746090e2f56292c0b8cfdfd815a9209dd9861391b56f2f3ce9f",
-				"dweb:/ipfs/QmSB4eCorxcx6wNN81L9hdbyME2ip6dKNUbmY57DAHAVVf"
+				"bzz-raw://6af5a90fc966465a78465146b4e9fb728b43657abdbb0cef6803fd00b6029c03",
+				"dweb:/ipfs/QmZ9rAbA3qwdjLSmJs4EuXruagpHWYPXX4mYz1LdFeNX93"
 			]
 		}
 	},

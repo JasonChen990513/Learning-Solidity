@@ -1,19 +1,18 @@
 {
 	"compiler": {
-		"version": "0.8.20+commit.a1b79de6"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "num",
-						"type": "uint256"
-					}
-				],
-				"name": "modifyInt",
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getInnerValue1",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -21,17 +20,49 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "testint",
+				"name": "getInnerValue2",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "outer",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "innerValue1",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct testingVersion.InnerStruct1",
+						"name": "inner1",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "innerValue2",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct testingVersion.InnerStruct2",
+						"name": "inner2",
+						"type": "tuple"
 					}
 				],
 				"stateMutability": "view",
@@ -53,7 +84,7 @@
 		"compilationTarget": {
 			"testing.sol": "testingVersion"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -66,11 +97,11 @@
 	},
 	"sources": {
 		"testing.sol": {
-			"keccak256": "0xc15fcb6a49f7bff85c83817dbf744833ec9719fe0241eb28779ee72f4be7aee9",
+			"keccak256": "0x1efc8b404a92c5ac31502e310c87641780a5f0fdbb0f73620699858b3653cc0c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b070607126a2c0a4daeb31e1021c2ce0f8e1a7803122b71bd9f2b71808a36598",
-				"dweb:/ipfs/Qma1DoEohhUn19mUD9XJb5UgSnrvqddNs22mZK1BSH7waK"
+				"bzz-raw://e74b36cecf4524cc436969e061cbe9ef9cf77cbaa95a38ea15bfb309d66dee36",
+				"dweb:/ipfs/QmPmuzpZQWeNVSzEksUXiBHFHSwr1sdv4f7beGRzpSys6q"
 			]
 		}
 	},
